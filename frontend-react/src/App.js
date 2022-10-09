@@ -15,12 +15,20 @@ const App = () => {
     { name: "movieId", header: "movieId", defaultWidth: 80, type: "number" },
     { name: "title", header: "title", defaultFlex: 1, type: "string" },
     { name: "genres", header: "genres", defaultFlex: 1, type: "string" },
+    { name: "userId", header: "userId", defaultWidth: 80, type: "number" },
+    { name: "tag", header: "tag", defaultFlex: 1, type: "string" },
+    { name: "imdbId", header: "imdbId", defaultFlex: 1, type: "number" },
+    { name: "tmdbId", header: "tmdbId", defaultWidth: 80, type: "number" }
   ];
 
   const filterValue = [
     { name: "movieId", operator: "gte", type: "number" },
     { name: "title", operator: "startsWith", type: "string" },
     { name: "genres", operator: "startsWith", type: "string" },
+    { name: "userId", operator: "gte", type: "number" },
+    { name: "tag", operator: "startsWith", type: "string" },
+    { name: "imdbId", operator: "gte", type: "number" },
+    { name: "tmdbId", operator: "gte", type: "number" },
   ];
 
   useEffect(() => {
