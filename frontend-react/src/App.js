@@ -55,6 +55,7 @@ const App = () => {
       <div>
           <ReactDataGrid
             idProperty="id"
+            pagination
             style={gridStyle}
             defaultFilterValue={filterValue}
             columns={columns}
